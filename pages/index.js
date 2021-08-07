@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
@@ -13,7 +14,7 @@ export default function Home() {
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Welcome to Jasper's <a href="https://nextjs.org">Next.js!</a>
+          Welcome to Jasper&apos;s <a href="https://nextjs.org">Next.js!</a>
         </h1>
 
         <p className={styles.description}>
@@ -22,11 +23,12 @@ export default function Home() {
         </p>
 
         <div className={styles.grid}>
-          <a href="/about" className={styles.card}>
+          <Link href="/about">
+            <a className={styles.card}>
             <h2>about &rarr;</h2>
             <p>Find in-depth information about Next.js features and API.</p>
           </a>
-
+          </Link>
           <a href="https://nextjs.org/learn" className={styles.card}>
             <h2>Learn &rarr;</h2>
             <p>Learn about Next.js in an interactive course with quizzes!</p>
